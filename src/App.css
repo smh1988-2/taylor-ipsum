@@ -132,30 +132,56 @@ table {
 
 body {
   background-color: #f6f4d2;
+  min-height: 100vh;
+  position: relative;
+}
+
+.content-wrap {
+  padding-bottom: 4.5rem;
 }
 
 .header-container {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  gap: 30px;
+  text-align: center;
   padding: 72px 32px 32px;
+  max-width: 330px;
+  margin: auto;
 }
 
 h1 {
   color: #a44a3f;
   font-family: "IM Fell DW Pica", serif;
   font-size: 3rem;
+  margin-bottom: 24px;
 }
 
 .header-text {
   text-align: center;
 }
 
+.options-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+select {
+  padding: 10px;
+  background-color: #a44a3f;
+  color: #fff;
+  font-size: 0.9rem;
+  border: none;
+}
+
 .generate-button-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 48px;
 }
 
 .generate-button {
@@ -172,4 +198,25 @@ h1 {
 .generate-button:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+
+.output-container {
+  padding: 0 16px;
+  line-height: 1.2;
+  font-size: 1.2rem;
+  max-width: 550px;
+  margin: auto;
+}
+
+.output-text {
+  margin-bottom: 15px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
+  font-size: 0.75rem;
 }
