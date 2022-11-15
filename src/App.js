@@ -1,9 +1,14 @@
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+import Generator from "./components/Generator";
 
 function App() {
+  
+
   return (
     <div>
-     app goes here
+      <Header />
+      <Generator />
     </div>
   );
 }
