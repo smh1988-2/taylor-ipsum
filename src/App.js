@@ -12,7 +12,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className="content-wrap">
       <Header />
       <Generator setOutput={setOutput} setParagraphs={setParagraphs} />
       <Output output={output} paragraphs={paragraphs} />

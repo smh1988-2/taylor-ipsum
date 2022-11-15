@@ -132,6 +132,12 @@ table {
 
 body {
   background-color: #f6f4d2;
+  min-height: 100vh;
+  position: relative;
+}
+
+.content-wrap {
+  padding-bottom: 4.5rem;
 }
 
 .header-container {
@@ -153,21 +159,21 @@ h1 {
 }
 
 .options-container {
-    display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 16px;
-    text-align: center;
-    margin-bottom: 16px;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 select {
-    padding: 10px;
-    background-color: #a44a3f;
-    color: #fff;
-    font-size: .9rem;
-    border: none;
+  padding: 10px;
+  background-color: #a44a3f;
+  color: #fff;
+  font-size: 0.9rem;
+  border: none;
 }
 
 .generate-button-container {
@@ -195,12 +201,22 @@ select {
 }
 
 .output-container {
-    text-align: center;
-    font-size: 1.2rem;
-    max-width: 550px;
-    margin: auto;
+  padding: 0 16px;
+  line-height: 1.2;
+  font-size: 1.2rem;
+  max-width: 550px;
+  margin: auto;
 }
 
 .output-text {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
+  font-size: 0.75rem;
 }
