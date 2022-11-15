@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Generator from "./components/Generator";
 import Output from "./components/Output";
+import Footer from "./components/Footer";
 
 import { useState } from "react";
 
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <Generator setOutput={setOutput} setParagraphs={setParagraphs} />
       <Output output={output} paragraphs={paragraphs} />
+      <Footer />
     </div>
   );
 }

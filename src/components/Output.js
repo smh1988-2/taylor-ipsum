@@ -1,18 +1,27 @@
 import React from "react";
 
 function Output({ output, paragraphs }) {
-    console.log(output.length)
-    console.log(paragraphs)
 
   return (
-    <div className="output-container">
-        
-      <p className="output-text">{output.splice(0, 2).join(" ")}</p>
+    <main className="output-container">
+      {paragraphs ? (
+        <>
+          <p className="output-text">
+            {output.slice(0, output.length / 3).join(" ")}
+          </p>
 
-      <p className="output-text">{output.join(" ")}</p>
+          <p className="output-text">
+            {output.slice(output.length / 3, output.length / 1.5).join(" ")}
+          </p>
 
-      <p className="output-text">{output.join(" ")}</p>
-    </div>
+          <p className="output-text">
+            {output.slice(output.length / 1.5, output.length).join(" ")}
+          </p>
+        </>
+      ) : (
+        <p className="output-text">{output.join(" ")}</p>
+      )}
+    </main>
   );
 }
 
