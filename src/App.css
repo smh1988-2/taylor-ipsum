@@ -220,3 +220,13 @@ select {
   text-align: center;
   font-size: 0.75rem;
 }
+
+.footer a {
+  color: #a44a3f;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.footer a:hover {
+  color: #d4e09b;
+}
