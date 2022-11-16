@@ -184,18 +184,21 @@ select {
   margin-bottom: 48px;
 }
 
-.generate-button {
+button {
   background-color: #cbdfbd;
-  border: 1px solid #d4e09b;
-  padding: 15px;
+  border: 1px solid transparent;
   border-radius: 6px;
-  font-size: 1.2rem;
   color: #a44a3f;
   font-weight: 600;
   transition: opacity 0.3s;
 }
 
-.generate-button:hover {
+.generate-button {
+  padding: 15px;
+  font-size: 1.2rem;
+}
+
+button:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -209,7 +212,37 @@ select {
 }
 
 .output-text {
-  margin-bottom: 15px;
+  margin-bottom: 32px;
+}
+
+.copy-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.copy-button {
+  padding: 10px;
+  font-size: 0.8rem;
+  width: fit-content;
+  margin: auto;
+}
+
+.copied-text {
+  text-align: center;
+  font-size: .75rem;
+  animation-name: appear;
+  animation-duration: .7s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .footer {
@@ -219,4 +252,14 @@ select {
   height: 2.5rem;
   text-align: center;
   font-size: 0.75rem;
+}
+
+.footer a {
+  color: #a44a3f;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #d4e09b;
 }
