@@ -1,6 +1,12 @@
 import React from "react";
+import { useState } from "react";
 
-function Output({ output, paragraphs }) {
+function Output({ output, paragraphs, copied, setCopied }) {
+  
+  function handleCopy() {
+    navigator.clipboard.writeText(output.join(" "));
+    setCopied(true);
+  }
 
   return (
     <main className="output-container">
@@ -21,6 +27,16 @@ function Output({ output, paragraphs }) {
       ) : (
         <p className="output-text">{output.join(" ")}</p>
       )}
+
+      <div className="copy-button-container">
+        {output.length > 0 ? (
+          <button className="copy-button" onClick={handleCopy}>
+            Copy to clipboard
+          </button>
+        ) : null}
+
+        {copied ? <p className="copied-text">Copied!</p> : null}
+      </div>
     </main>
   );
 }

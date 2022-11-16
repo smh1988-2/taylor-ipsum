@@ -8,14 +8,14 @@ import { useState } from "react";
 
 function App() {
   const [output, setOutput] = useState([]);
-  const [paragraphs, setParagraphs] = useState(false)
-
+  const [paragraphs, setParagraphs] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   return (
     <div className="content-wrap">
       <Header />
-      <Generator setOutput={setOutput} setParagraphs={setParagraphs} />
-      <Output output={output} paragraphs={paragraphs} />
+      <Generator setOutput={setOutput} setParagraphs={setParagraphs} setCopied={setCopied} />
+      <Output output={output} paragraphs={paragraphs} copied={copied} setCopied={setCopied} />
       <Footer />
     </div>
   );
