@@ -1,2 +1,2 @@
 # Taylor Ipsum
-A random word generator using excerpts from Taylor Swift lyrics.
+A random word generator inspired by Taylor Swift.
