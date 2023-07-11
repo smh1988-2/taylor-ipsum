@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import ReactGA from "react-ga4";
+
 
 function Generator({ setOutput, setParagraphs, setCopied }) {
   const [length, setLength] = useState(15);
@@ -13,6 +15,11 @@ function Generator({ setOutput, setParagraphs, setCopied }) {
     }
     setOutput(newArray);
     setCopied(false);
+
+    ReactGA.event({
+      category: "click",
+      action: "generate_click",
+    });
   }
 
   return (

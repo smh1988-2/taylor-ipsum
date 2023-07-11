@@ -7,8 +7,6 @@ import { useState } from "react";
 
 import ReactGA from "react-ga4";
 
-  
-
 function App() {
   const [output, setOutput] = useState([]);
   const [paragraphs, setParagraphs] = useState(false);
