@@ -23,10 +23,10 @@ function Generator({ setOutput, setParagraphs, setCopied }) {
           id="length"
           onChange={(e) => setLength(e.target.value)}
         >
-          <option value="15">15 words</option>
-          <option value="30">30 words</option>
-          <option value="90">90 words</option>
-          <option value="300">300 words</option>
+          <option value="15">Short</option>
+          <option value="30">Medium</option>
+          <option value="90">Long</option>
+          <option value="300">Extra Long</option>
         </select>
 
         <div>
